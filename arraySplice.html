@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.splice</title>
+</head>
+<body>
+
+    <button onclick="borra()">BORRAR</button>
+
+    <script>
+        const productos=[
+            {
+                nombre:'hernan',
+                edad:'43'
+            },
+            {
+                nombre: 'jorgelina',
+                edad: '37'
+            },
+            {
+                nombre:'abigail',
+                edad:'6'
+            },
+            {
+                nombre: 'aileen',
+                edad: '1'
+            }
+
+
+        ]
+        console.log(productos);
+
+    function borra(){
+        productos.splice(0,1)
+        console.log(productos)
+        if (productos.length === 0){
+            console.log('el carrito esta vacio');
+        }
+    }
+
+        
+    </script>
+    
+</body>
+</html>
